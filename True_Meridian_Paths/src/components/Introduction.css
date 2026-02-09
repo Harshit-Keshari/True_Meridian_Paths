@@ -1,0 +1,111 @@
+.introduction-section {
+  background: radial-gradient(circle at top left, #0a2540, #103b5c);
+  color: white;
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left decorative graphic */
+
+.introduction-section::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -30px; /* partially offscreen to left */
+  width: 150px;
+  height: 150px;
+  background-image: url('../assets/svg/aeroplane1.svg'); /* your path here */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.85; /* subtle */
+  pointer-events: none;
+  transform: rotate(-10deg);
+}
+/* Right decorative graphic */
+.introduction-section::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  right: -30px; /* partially offscreen to right */
+  width: 150px;
+  height: 150px;
+  background-image: url('../assets/svg/suitcase1.svg'); /* your path here */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: rotate(15deg);
+}
+
+/* Container with two columns */
+.intro-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Left image wrapper with double border */
+.intro-image-wrapper {
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 10px;
+  border: 5px solid white; /* outer solid border */
+  border-radius: 50%;
+  position: relative;
+  box-sizing: content-box;
+  width: 320px;
+  height: 320px;
+
+}
+
+/* Dashed border inside */
+.intro-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  border: 4px dashed #f0f0f0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  box-shadow: 0 0 6px rgba(255,255,255,0.3);
+  
+}
+
+/* Image itself */
+.intro-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  object-fit: cover;
+}
+
+/* Right text */
+.intro-text {
+  flex: 2 1 400px;
+}
+
+/* Heading */
+.intro-text h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraphs */
+.intro-text p:not(.intro-bullet) {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  opacity: 0.85;
+}

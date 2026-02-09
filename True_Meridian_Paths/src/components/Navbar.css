@@ -1,0 +1,72 @@
+/* Navbar overlay on hero video */
+.navbar-blur-overlay {
+  position: absolute;            /* overlay hero video */
+  top: 15px;                     /* small margin from top */
+  left: 50%;
+  transform: translateX(-50%);   /* center horizontally */
+  z-index: 1000;                 /* above video */
+  background: rgba(128, 128, 128, 0.35); /* grey transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 95%;                    /* responsive width */
+  max-width: 1200px;             /* optional maximum width */
+  transition: all 0.3s ease;     /* smooth transition when sticky */
+}
+
+/* Sticky state when scrolled */
+.navbar-blur-overlay.sticky {
+  position: fixed;                /* sticks to top */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(50, 50, 50, 0.9); /* darker for readability */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Logo styling */
+.navbar-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Nav links white color */
+.navbar-blur-overlay .nav-link-custom,
+.navbar-blur-overlay .navbar-brand,
+.navbar-blur-overlay .nav-dropdown-toggle {
+  color: white !important;
+}
+
+/* Buttons consistent color */
+.navbar-blur-overlay .btn-info {
+  background-color: #0dcaf0;
+  border: none;
+  color: white;
+}
+
+/* Dropdown menu background and text */
+.navbar-blur-overlay .dropdown-menu {
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+.navbar-blur-overlay .dropdown-item {
+  color: white;
+}
+
+.navbar-blur-overlay .dropdown-item:hover {
+  background-color: rgba(13, 202, 240, 0.3);
+}
+
+/* Responsive smaller logo on mobile */
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 55px;
+  }
+  .navbar-blur-overlay {
+    width: 95%;
+  }
+}
