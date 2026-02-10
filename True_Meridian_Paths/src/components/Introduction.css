@@ -16,7 +16,7 @@
   left: -30px; /* partially offscreen to left */
   width: 150px;
   height: 150px;
-  background-image: url('../assets/svg/aeroplane1.svg'); /* your path here */
+  background-image: url('/svg/aeroplane1.svg');; /* your path here */
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.85; /* subtle */
@@ -31,7 +31,7 @@
   right: -30px; /* partially offscreen to right */
   width: 150px;
   height: 150px;
-  background-image: url('../assets/svg/suitcase1.svg'); /* your path here */
+  background-image: url('/svg/suitcase1.svg'); /* your path here */
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.95;
