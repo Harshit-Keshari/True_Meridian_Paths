@@ -8,30 +8,30 @@
 }
 
 /* Left decorative graphic */
-
 .introduction-section::before {
   content: "";
   position: absolute;
   top: 30%;
-  left: -30px; /* partially offscreen to left */
+  left: -30px;
   width: 150px;
   height: 150px;
-  background-image: url('/svg/aeroplane1.svg');; /* your path here */
+  background-image: url('/svg/aeroplane1.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.85; /* subtle */
+  opacity: 0.85;
   pointer-events: none;
   transform: rotate(-10deg);
 }
+
 /* Right decorative graphic */
 .introduction-section::after {
   content: "";
   position: absolute;
   bottom: 30%;
-  right: -30px; /* partially offscreen to right */
+  right: -30px;
   width: 150px;
   height: 150px;
-  background-image: url('/svg/suitcase1.svg'); /* your path here */
+  background-image: url('/svg/suitcase1.svg');
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.95;
@@ -39,7 +39,7 @@
   transform: rotate(15deg);
 }
 
-/* Container with two columns */
+/* Container */
 .intro-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -49,52 +49,38 @@
   flex-wrap: wrap;
 }
 
-/* Left image wrapper with double border */
+/* Image wrapper */
 .intro-image-wrapper {
-  flex: 1 1 300px;
-  max-width: 320px;
   width: 320px;
   height: 320px;
-
-  padding: 10px;
   border: 5px solid white;
   border-radius: 50%;
-
   position: relative;
-  overflow: visible;   /* 🔑 IMPORTANT */
   box-sizing: border-box;
 }
 
-
-/* Dashed border inside */
+/* Dashed inner circle */
 .intro-image-wrapper::before {
   content: "";
   position: absolute;
-  inset: 18px;
+  inset: 16px;
   border: 4px dashed #f0f0f0;
   border-radius: 50%;
   z-index: 2;
   pointer-events: none;
 }
 
-
-/* Image itself */
+/* Island image */
 .intro-image {
   position: absolute;
-  top: 18px;
-  left: 18px;
-  width: calc(100% - 36px);
-  height: calc(100% - 36px);
-
+  top: 32px;
+  left: 32px;
+  width: calc(100% - 64px);
+  height: calc(100% - 64px);
   border-radius: 50%;
   object-fit: cover;
-
-  transition: transform 0.4s ease;
   z-index: 1;
 }
-
-
-
 
 /* Right text */
 .intro-text {
@@ -114,4 +100,21 @@
   line-height: 1.6;
   margin-bottom: 1.2rem;
   opacity: 0.85;
+}
+
+/* Mobile fixes */
+@media (max-width: 768px) {
+  .introduction-section::before,
+  .introduction-section::after {
+    display: none;
+  }
+
+  .intro-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .intro-image-wrapper {
+    margin-bottom: 2rem;
+  }
 }
