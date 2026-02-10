@@ -1,12 +1,17 @@
 import "./Hero.css";
-import heroVideo from "../assets/herovideo.mp4";
 
 function Hero() {
   return (
     <div className="hero-container">
       {/* Background Video */}
-      <video className="hero-video" autoPlay loop muted playsInline>
-        <source src={heroVideo} type="video/mp4" />
+      <video
+        className="hero-video"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/herovideo.mp4" type="video/mp4" />
       </video>
 
       {/* Dark Overlay */}
@@ -23,7 +28,6 @@ function Hero() {
         <a href="#introduction" className="hero-btn">
           MORE INFORMATION
         </a>
-
       </div>
     </div>
   );
