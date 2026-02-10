@@ -1,0 +1,26 @@
+.footer {
+  background: #0a2540;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.footer h3 {
+  font-weight: 900;
+}
+
+.footer-links {
+  margin: 1.5rem 0;
+}
+
+.footer-links a {
+  margin: 0 0.6rem;
+  color: #3db6c6;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer span {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}

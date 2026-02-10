@@ -1,0 +1,35 @@
+.faq-section {
+  background: radial-gradient(circle at top right, #0a2540, #103b5c);
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-list details {
+  background: #3f7f84;
+  padding: 1.2rem;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.faq-list summary {
+  font-weight: 700;
+}
+
+.faq-list p {
+  margin-top: 0.6rem;
+  opacity: 0.9;
+}

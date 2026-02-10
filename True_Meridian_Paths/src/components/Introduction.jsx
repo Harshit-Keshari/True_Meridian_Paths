@@ -3,7 +3,7 @@ import islandImage from "../assets/island.png";
 
 function Introduction() {
   return (
-    <section className="introduction-section">
+    <section className="introduction-section" id="introduction">
       <div className="intro-container">
         {/* Left: Image */}
         <div className="intro-image-wrapper">
@@ -15,7 +15,7 @@ function Introduction() {
           <h2>INTRODUCTION</h2>
           <p className="intro-bullet">
             {/* <span className="bullet-dot"></span> */}
-            <p><b>True Meridian Paths</b> is more than just a travel agency — it’s your companion in discovering meaningful journeys. We believe travel is not about ticking destinations off a list, but about experiences that stay with you long after the trip ends.</p>
+            <b>True Meridian Paths</b> is more than just a travel agency — it’s your companion in discovering meaningful journeys. We believe travel is not about ticking destinations off a list, but about experiences that stay with you long after the trip ends.
           </p>
 
           <p>

@@ -32,7 +32,7 @@ function Navigation_bar() {
     >
       <Container fluid>
         {/* Brand */}
-        <Navbar.Brand href="#" className="d-flex align-items-center">
+        <Navbar.Brand href="/" className="d-flex align-items-center">
           <img
             src={logo}
             alt="True Meridian Paths Logo"
@@ -45,7 +45,7 @@ function Navigation_bar() {
         <Navbar.Collapse id="navbarScroll">
           {/* Center Nav */}
           <Nav className="mx-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link href="#home" className="nav-link-custom">
+            <Nav.Link href="/" className="nav-link-custom">
               Home
             </Nav.Link>
             <Nav.Link href="#about" className="nav-link-custom">
@@ -72,10 +72,10 @@ function Navigation_bar() {
           </Nav>
 
           {/* Right Buttons */}
-          <div className="d-flex gap-2 ms-auto">
+          {/* <div className="d-flex gap-2 ms-auto">
             <Button variant="info">Login</Button>
             <Button variant="info">Sign Up</Button>
-          </div>
+          </div> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

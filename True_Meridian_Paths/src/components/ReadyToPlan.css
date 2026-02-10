@@ -1,0 +1,92 @@
+.ready-section {
+  background: radial-gradient(circle at top left, #0a2540, #103b5c);
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.ready-section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+}
+
+/* Subtext */
+.ready-subtext {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Form */
+.ready-form {
+  max-width: 460px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Inputs */
+.ready-form input,
+.ready-form textarea {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: none;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+/* Button */
+.ready-form button {
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 999px;
+  border: none;
+  background: #3db6c6;
+  color: #0a2540;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ready-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Toast */
+.toast {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background: #3db6c6;
+  color: #0a2540;
+  font-weight: 700;
+  border-radius: 999px;
+  display: inline-block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ready-section h2 {
+    font-size: 2rem;
+  }
+}

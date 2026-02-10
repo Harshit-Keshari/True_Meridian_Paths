@@ -20,7 +20,10 @@ function Hero() {
 
         <p>Explore the World with us !</p>
 
-        <button className="hero-btn">MORE INFORMATION</button>
+        <a href="#introduction" className="hero-btn">
+          MORE INFORMATION
+        </a>
+
       </div>
     </div>
   );
