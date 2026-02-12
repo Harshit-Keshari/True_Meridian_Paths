@@ -3,16 +3,17 @@ import "./Hero.css";
 function Hero() {
   return (
     <div className="hero-container">
-      <video
-        className="hero-video"
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="/hero-poster.png"
-      >
-        <source src="/herovideo.mp4" type="video/mp4" />
-      </video>
+
+      <div className="hero-video-wrapper">
+        <iframe
+          className="hero-video"
+          src="https://www.youtube.com/embed/nmP64V1R16s?autoplay=1&mute=1&loop=1&playlist=nmP64V1R16s&controls=0&modestbranding=1&rel=0"
+          title="True Meridian Paths Hero Video"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+        ></iframe>
+      </div>
 
       <div className="hero-overlay"></div>
 
@@ -25,6 +26,7 @@ function Hero() {
           MORE INFORMATION
         </a>
       </div>
+
     </div>
   );
 }
