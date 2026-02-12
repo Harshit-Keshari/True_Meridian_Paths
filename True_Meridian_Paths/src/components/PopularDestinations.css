@@ -81,6 +81,75 @@
   opacity: 0.9;
 }
 
+/* Smooth animation base */
+.destination-card {
+  min-width: 220px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hover lift */
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image wrapper animation */
+.destination-image-wrapper {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: content-box;
+  transition: all 0.4s ease;
+}
+
+/* Glow effect on hover */
+.destination-card:hover .destination-image-wrapper {
+  box-shadow: 0 0 25px rgba(61, 182, 198, 0.6);
+  transform: scale(1.05);
+  border-color: #3db6c6;
+}
+
+/* Rotate dashed ring slightly */
+.destination-card:hover .destination-image-wrapper::before {
+  transform: rotate(20deg);
+  border-color: #3db6c6;
+}
+
+/* Image zoom */
+.destination-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.destination-card:hover .destination-image-wrapper img {
+  transform: scale(1.1);
+}
+
+/* Destination name highlight */
+.destination-name {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  opacity: 0.9;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.destination-card:hover .destination-name {
+  color: #3db6c6;
+  transform: translateY(-4px);
+}
+
+
 /* Mobile polish */
 @media (max-width: 768px) {
   .destinations-title {
