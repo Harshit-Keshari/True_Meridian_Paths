@@ -2,7 +2,7 @@ import "./ReviewForm.css";
 
 function ReviewForm() {
   return (
-    <section className="review-form-section">
+    <section className="review-form-section" id="review">
       <h2>Share Your Experience</h2>
 
       <form

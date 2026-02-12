@@ -18,6 +18,9 @@ function WhyChooseUs() {
             <li>Personalized travel planning for every journey</li>
             <li>24/7 support throughout your trip</li>
             <li>Carefully curated destinations and experiences</li>
+            <li>Local-First Experiences</li>
+            <li>Transparent Pricings</li>
+            <li>Human Support, Not Bots</li>
           </ul>
 
           <p className="why-desc">

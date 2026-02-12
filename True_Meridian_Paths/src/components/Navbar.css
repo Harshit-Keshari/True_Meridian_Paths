@@ -5,7 +5,7 @@
   left: 50%;
   transform: translateX(-50%);   /* center horizontally */
   z-index: 1000;                 /* above video */
-  background: rgba(128, 128, 128, 0.35); /* grey transparent */
+  background: rgba(128, 128, 128, 0.15); /* grey transparent */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -22,7 +22,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(50, 50, 50, 0.9); /* darker for readability */
+  background: rgba(50, 50, 50, 0.15); /* darker for readability */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }

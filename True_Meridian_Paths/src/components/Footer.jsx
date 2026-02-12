@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <h3>True Meridian Paths</h3>
       <p>Journeys crafted with purpose & care.</p>
 

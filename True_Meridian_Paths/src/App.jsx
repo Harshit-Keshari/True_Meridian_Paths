@@ -11,7 +11,6 @@ import Packages from "./components/Packages";
 import ReviewForm from "./components/ReviewForm";
 import HowItWorks from "./components/HowItWorks";
 import Faq from "./components/Faq";
-import TrustSignals from "./components/TrustSignals";
 import ReadyToPlan from "./components/ReadyToPlan";
 import Footer from "./components/Footer";
 
@@ -34,7 +33,6 @@ function App() {
             <Packages />
             <ReviewForm />
             <HowItWorks />
-            <TrustSignals />
             <ReadyToPlan />
             <Faq />
             <Footer />
@@ -44,6 +42,7 @@ function App() {
 
       {/* THANK YOU PAGE */}
       <Route path="/thank-you" element={<ThankYou />} />
+      
     </Routes>
   );
 }

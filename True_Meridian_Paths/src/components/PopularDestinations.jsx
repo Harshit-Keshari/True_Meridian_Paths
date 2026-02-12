@@ -16,7 +16,7 @@ const destinations = [
 
 function PopularDestinations() {
   return (
-    <section className="destinations-section">
+    <section className="destinations-section" id="destinations">
       <h2 className="destinations-title">POPULAR DESTINATIONS</h2>
 
       <div className="destinations-scroll">

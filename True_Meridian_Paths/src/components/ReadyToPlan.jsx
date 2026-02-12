@@ -3,7 +3,7 @@ import "./ReadyToPlan.css";
 function ReadyToPlan() {
   return (
     <section className="ready-section" id="ready-to-plan">
-      <h2>READY TO PLAN YOUR JOURNEY?</h2>
+      <h2>ALREADY HAVE A PLAN ?</h2>
       <p className="ready-subtext">
         Share your details and we’ll reach out to craft a journey just for you.
       </p>

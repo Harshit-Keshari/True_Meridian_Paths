@@ -2,16 +2,16 @@ import "./Packages.css";
 
 function Packages() {
   const whatsappNumber = "918005454034"; // replace with your number
-  const message = "Hi, I’m interested in your travel packages. Please share details.";
+  const message =
+    "Hi, I’m interested in your travel packages. Please share details.";
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <section className="packages-section">
+    <section className="packages-section" id="packages">
       <h2 className="packages-title">OUR PACKAGES</h2>
 
       <div className="packages-container">
-
         {/* Basic */}
         <div className="package-card">
           <h3>FAMILY PACKAGES</h3>
@@ -62,7 +62,6 @@ function Packages() {
             <button className="whatsapp-btn">ENQUIRE ON WHATSAPP</button>
           </a>
         </div>
-
       </div>
 
       {/* CTA */}
@@ -77,7 +76,6 @@ function Packages() {
           <button className="cta-btn">PLAN MY JOURNEY</button>
         </a>
       </div>
-
     </section>
   );
 }

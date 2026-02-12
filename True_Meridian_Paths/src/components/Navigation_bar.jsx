@@ -48,7 +48,7 @@ function Navigation_bar() {
             <Nav.Link href="/" className="nav-link-custom">
               Home
             </Nav.Link>
-            <Nav.Link href="#about" className="nav-link-custom">
+            <Nav.Link href="#introduction" className="nav-link-custom">
               About
             </Nav.Link>
 
@@ -57,16 +57,24 @@ function Navigation_bar() {
               id="navbarScrollingDropdown"
               className="nav-link-custom"
             >
-              <NavDropdown.Item href="#action3">Tour Packages</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Spiritual Tours</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Customized Trips</NavDropdown.Item>
-              <NavDropdown.Item href="#action6">Bookings</NavDropdown.Item>
-              <NavDropdown.Item href="#action7">Experiences</NavDropdown.Item>
+              <NavDropdown.Item href="#packages">
+                Tour Packages
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#destinations">
+                Destinations
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#ready-to-plan">
+                Customized Trips
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#ready-to-plan">
+                Bookings
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#review">Experiences</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action8">Travel Support</NavDropdown.Item>
+              <NavDropdown.Item href="#footer">Travel Support</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#contact" className="nav-link-custom">
+            <Nav.Link href="#footer" className="nav-link-custom">
               Contact
             </Nav.Link>
           </Nav>
